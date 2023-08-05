@@ -2,7 +2,14 @@
 module.exports = {
   content: ["./**/*.php"],
   theme: {
-    extend: {},
+    extend: {
+      marginTop:{
+        margint: "25vh"
+      },
+      fontFamily:{
+        primary: "Futura"
+      }
+    },
   },
   plugins: [],
 }

@@ -10,7 +10,7 @@
     <script src="<?php echo get_template_directory_uri(); ?>/scrollEvent.js" defer></script>
 </head>
 
-<body <?php body_class(); ?>>
+<body class="font-primary" <?php body_class(); ?>>
     <header class="w-full h-[80vh] bg-black">
         <nav class="fixed w-full flex items-center justify-between h-[10vh] px-[10vw] text-white z-10">
             <a href="#" class="logo">

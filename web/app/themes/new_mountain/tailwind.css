@@ -2,6 +2,13 @@
 Theme Name: New Mountain
 */
 
+@font-face {
+    font-family: 'Futura';
+    src: url('./assets/fonts/futura-medium-bt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
