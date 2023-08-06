@@ -29,7 +29,7 @@
         </div>
     </div>
 </section>
-<section class="w-full h-[80vh] flex flex-col items-center justify-center gap-[15px] custom-mt-25vh text-white bg-black">
+<section class="w-full h-[80vh] flex flex-col items-center justify-center gap-[15px] mt-[25vh] text-white bg-black">
     <p><?php echo get_field("subtitle") ?></p>
     <h3 class="text-[2rem] font-bold leading-[1.3] w-[20%] text-center mb-[5vh]"><?php echo get_field("title") ?></h3>
 
