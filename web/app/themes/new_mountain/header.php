@@ -17,7 +17,7 @@
                 <?php
                 $logo = get_field("logo_du_site");
                 if ($logo) {
-                    echo '<img src="' . esc_url($logo) . '" alt="Logo du site">';
+                    echo '<img src="' . esc_url($logo) . '" alt="Logo du site" class="w-[120px]">';
                 }
                 ?>
             </a>
