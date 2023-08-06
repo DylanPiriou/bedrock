@@ -1,13 +1,13 @@
+// Style conditionnel pour la navbar
 const navigation = document.querySelector('nav');
-const limit = 200;
 
 function handleScroll() {
-    if (window.scrollY > limit) {
+    if (window.scrollY > 100) {
         navigation.classList.remove("text-white");
         navigation.classList.remove("bg-black");
         navigation.classList.add("bg-gray-200");
         navigation.classList.add("text-black");
-    } else if (window.scrollY < limit) {
+    } else {
         navigation.classList.remove("text-black");
         navigation.classList.remove("bg-gray-200");
         navigation.classList.add("bg-black");

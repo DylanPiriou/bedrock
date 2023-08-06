@@ -1,5 +1,8 @@
 /*!
 Theme Name: New Mountain
+Author: Dylan.P
+Description: An amazing WordPress theme.
+Version: 1.0
 */
 
 @font-face {
@@ -701,11 +704,6 @@ video {
 .bg-gray-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
-}
-
-.bg-red-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 202 202 / var(--tw-bg-opacity));
 }
 
 .p-\[50px\] {
