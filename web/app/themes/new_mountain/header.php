@@ -7,7 +7,7 @@
     <title><?php wp_title(); ?></title>
     <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
     <?php wp_head(); ?>
-    <script src="<?php echo get_template_directory_uri(); ?>/scrollEvent.js" defer></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/scripts/scrollEvent.js" defer></script>
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
 </head>
 
