@@ -32,10 +32,15 @@
 <section class="w-full h-[80vh] flex flex-col items-center justify-center gap-[15px] custom-mt-25vh text-white bg-black">
     <p><?php echo get_field("subtitle") ?></p>
     <h3 class="text-[2rem] font-bold leading-[1.3]"><?php echo get_field("title") ?></h3>
-    <div class="w-3/12 h-[5vh] flex items-center justify-center gap-[50px] overflow-hidden bg-red-600text-[2rem]>
+    <div class="w-3/12 h-[5vh] flex items-center justify-center gap-[20px] overflow-hidden bg-blue-600 text-[2rem]">
         <?php
-                $logo_image = get_sub_field('logo_image');
-                echo $logo_image;
+        if (have_rows('logo_repeater')) :
+            while (have_rows('logo_repeater')) : the_row();
+                $logo = get_sub_field("logo_image");
+                echo '<img src="' . $logo['url'] . '" alt="logo mountain" class="h-full">';
+            endwhile;
+        endif;
         ?>
+
     </div>
 </section>
