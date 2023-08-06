@@ -7,9 +7,9 @@
         $img1 = get_field("image_colonne_1");
         echo '<img src="' . esc_url($img1) . '" alt="paysage">';
         ?>
-        <div class="flex flex-col gap-[15px] p-[50px]">
-            <p><?php echo get_field("surtitre_colonne_1") ?></p>
-            <h3 class="text-[2rem] font-bold w-4/5 leading-[1.3]"><?php echo get_field("titre_colonne_1") ?></h3>
+        <div class="flex flex-col gap-[15px] p-[50px] w-[80%]">
+            <p class="font-bold"><?php echo get_field("surtitre_colonne_1") ?></p>
+            <h3 class="text-[2rem] font-bold leading-[1.3]"><?php echo get_field("titre_colonne_1") ?></h3>
             <p>
                 <?php echo get_field("notule_colonne_1") ?>
             </p>
@@ -20,8 +20,8 @@
         $img2 = get_field("image_colonne_2");
         echo '<img src="' . esc_url($img2) . '" alt="randonneurs devant le vide">';
         ?>
-        <div class="flex flex-col gap-[15px] p-[50px]">
-            <p><?php echo get_field("surtitre_colonne_2") ?></p>
+        <div class="flex flex-col gap-[15px] p-[50px] w-[80%]">
+            <p class="font-bold"><?php echo get_field("surtitre_colonne_2") ?></p>
             <h3 class="text-[2rem] font-bold w-4/5 leading-[1.3]"><?php echo get_field("titre_colonne_2") ?></h3>
             <p>
                 <?php echo get_field("notule_colonne_2") ?>
@@ -31,7 +31,7 @@
 </section>
 <section class="w-full h-[80vh] flex flex-col items-center justify-center gap-[15px] custom-mt-25vh text-white bg-black">
     <p><?php echo get_field("subtitle") ?></p>
-    <h3 class="text-[2rem] font-bold leading-[1.3]"><?php echo get_field("title") ?></h3>
+    <h3 class="text-[2rem] font-bold leading-[1.3] w-[20%] text-center mb-[5vh]"><?php echo get_field("title") ?></h3>
 
     <div class="splide w-1/4" data-splide='{"type":"loop","perPage":5, "perMove": "1", "rewind":"true", "rewindByDrag":"true"}'>
         <div class="splide__arrows">

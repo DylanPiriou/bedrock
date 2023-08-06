@@ -33,7 +33,7 @@
         </nav>
 
         <div class="w-[70vw] absolute -translate-x-2/4 -translate-y-2/4 flex flex-col gap-[5vh] left-2/4 top-2/4 text-white">
-            <h1 class="w-[400px] text-5xl font-bold leading-[110%] z-1"><?php echo get_field('titre'); ?></h1>
+            <h1 class="w-[450px] text-5xl font-bold leading-[110%] z-1"><?php echo get_field('titre'); ?></h1>
             <div class="w-full h-[5vh] flex items-center justify-center">
                 <button class="h-full aspect-[1] flex items-center justify-center bg-gray-200"><img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/loupe.png" alt="loupe" /></button>
                 <input type="search" name="" id="" class="w-full h-full text-[black] pl-[15px]" placeholder="Chercher un aliment, une ville ou un animal..." />
