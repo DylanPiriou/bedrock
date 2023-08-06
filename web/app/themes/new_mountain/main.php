@@ -1,4 +1,4 @@
-<section class="w-full h-[50vh] flex items-center justify-center">
+<section class="w-full h-[40vh] flex items-center justify-center">
     <h2 class="max-w-[300px] text-center text-[2rem] font-bold"><?php echo get_field('titre_section_2') ?></h2>
 </section>
 <section class="w-full h-screen flex justify-between px-[10vw] py-0">
@@ -32,15 +32,18 @@
 <section class="w-full h-[80vh] flex flex-col items-center justify-center gap-[15px] custom-mt-25vh text-white bg-black">
     <p><?php echo get_field("subtitle") ?></p>
     <h3 class="text-[2rem] font-bold leading-[1.3]"><?php echo get_field("title") ?></h3>
-    <div class="w-3/12 h-[5vh] flex items-center justify-center gap-[20px] overflow-hidden bg-blue-600 text-[2rem]">
-        <?php
-        if (have_rows('logo_repeater')) :
-            while (have_rows('logo_repeater')) : the_row();
-                $logo = get_sub_field("logo_image");
-                echo '<img src="' . $logo['url'] . '" alt="logo mountain" class="h-full">';
-            endwhile;
-        endif;
-        ?>
-
+    <div class="relative w-1/5 h-[5vh] overflow-hidden">
+        <div class="inline-flex h-full items-center justify-center gap-[15px]">
+            <?php
+            if (have_rows('logo_repeater')) :
+                while (have_rows('logo_repeater')) : the_row();
+                    $logo = get_sub_field("logo_image");
+                    echo '<img src="' . $logo['url'] . '" alt="logo mountain" class="h-full">';
+                endwhile;
+            endif;
+            ?>
+        </div>
+        <button class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10"><img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/arrow-left.svg" alt="left button"></button>
+        <button class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10"><img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/arrow-right.svg" alt="right button"></button>
     </div>
 </section>

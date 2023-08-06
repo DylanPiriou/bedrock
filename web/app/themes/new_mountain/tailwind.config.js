@@ -3,10 +3,10 @@ module.exports = {
   content: ["./**/*.php"],
   theme: {
     extend: {
-      marginTop:{
-        margint: "25vh"
+      width: {
+        'fit-content': 'fit-content',
       },
-      fontFamily:{
+      fontFamily: {
         primary: "Futura"
       }
     },

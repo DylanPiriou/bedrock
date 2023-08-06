@@ -12,7 +12,7 @@
 
 <body class="font-primary" <?php body_class(); ?>>
     <header class="w-full h-[80vh] bg-black">
-        <nav class="fixed top-0 w-full flex items-center justify-between h-[10vh] px-[10vw] text-white bg-black z-10">
+        <nav class="fixed w-full flex items-center justify-between h-[10vh] px-[10vw] text-white bg-black z-10">
             <a href="#" class="logo">
                 <?php
                 $logo = get_field("logo_du_site");
